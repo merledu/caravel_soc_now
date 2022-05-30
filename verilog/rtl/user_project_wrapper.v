@@ -82,40 +82,32 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_proj_example mprj (
+wire [31:0] gpio_i;
+wire [31:0] gpio_o;
+wire [31:0] gpio_oe; 
+
+// pragramming uart
+assign io_oeb[5] = 1'b1;
+assign io_out[5] = 1'b0;
+
+// gpio
+assign io_out[37:6] = gpio_o;
+assign gpio_i = io_in[37:6];
+assign io_oeb[37:6] = ~gpio_oe;
+
+Caravel_Top mprj (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
 `endif
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
-
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-
-    .io_in (io_in),
-    .io_out(io_out),
-    .io_oeb(io_oeb),
-
-    // IRQ
-    .irq(user_irq)
+  .clock (wb_clk_i),
+  .reset (wb_rst_i),
+  .io_gpio_o (gpio_o),
+  .io_gpio_en_o (gpio_oe),
+  .io_gpio_i (gpio_i),
+  .io_rx_i (io_in[5]),
+  .io_CLK_PER_BIT (la_data_in[15:0])
 );
 
 endmodule	// user_project_wrapper
