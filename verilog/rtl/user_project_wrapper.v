@@ -115,7 +115,7 @@ soc_now_caravel_top mprj (
     .io_oeb(io_oeb),
 
     // IRQ
-    .irq(user_irq)
+    .user_irq(user_irq)
 );
 
 endmodule	// user_project_wrapper

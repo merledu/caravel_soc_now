@@ -89,7 +89,7 @@ assign io_out[37:6] = gpio_o;
 assign gpio_i = io_in[37:6];
 assign io_oeb[37:6] = ~gpio_oe;
 
-Caravel_Top mprj (
+Caravel_Top soc_top (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
