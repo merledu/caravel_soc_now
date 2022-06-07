@@ -84,12 +84,15 @@ wire [31:0] gpio_oe;
 assign io_oeb[5] = 1'b1;
 assign io_out[5] = 1'b0;
 
+assign io_oeb[3] = 1'b0;
+assign io_oeb[4] = 1'b1;
+
 // gpio
 assign io_out[37:6] = gpio_o;
 assign gpio_i = io_in[37:6];
 assign io_oeb[37:6] = ~gpio_oe;
 
-Caravel_Top soc_top (
+prog_uart_top soc_top (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
@@ -101,7 +104,9 @@ Caravel_Top soc_top (
   .io_gpio_en_o (gpio_oe),
   .io_gpio_i (gpio_i),
   .io_rx_i (io_in[5]),
-  .io_CLK_PER_BIT (la_data_in[15:0])
+  .io_CLK_PER_BIT (la_data_in[15:0]),
+  .boot(io_out[3]),
+  .prog_i(io_in[4])
 );
 
 endmodule	// user_project_wrapper
