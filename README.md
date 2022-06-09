@@ -10,6 +10,18 @@
 ![image](https://user-images.githubusercontent.com/52505840/172838414-5f9890b0-d31c-49a0-846c-013d76b066c9.png)
 
 ## Design Hierarchy
+The emitted verilog is present here.
+```
+verilog/
+├── rtl
+│   ├──Top.V
+│   ├──iccm_controler.V
+│   ├──prog_uart_top.V
+│   ├──programmer.V
+│   ├──sky130_sram_1kbyte_1rw1r_32x256_8.v
+│   ├──uart_rx_prog.v
+
+```
 
 
 SoC-Now is a CHISEL based SoC Generator with a Web-Application for generating SoC with your required configurations.
