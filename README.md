@@ -4,8 +4,10 @@
 
 # SoC-Now Google SKY130 Shuttle
 ### SoC-Now is a CHISEL based SoC. It has RV32I ISA support, 32 GPIO pins and UART to program the SoC. 
+![image](https://user-images.githubusercontent.com/52505840/172834779-152d220e-06a2-4419-8650-636f324d3d3a.png)
 
-SoC-Now is a CHISEL-based SoC Generator with a Web-Application for generating SoC with your required configurations.
+
+SoC-Now is a CHISEL based SoC Generator with a Web-Application for generating SoC with your required configurations.
 
 SoC-Now is implemented in chisel and all the components of SoC has generic interface which can be easily attached and form any System on Chip (SoC) by using [Jigsaw](https://github.com/talha-ahmed-1/jigsaw) framework and it also depends upon [Caravan](https://github.com/merledu/caravan). It uses [NucleusRV](https://github.com/merledu/nucleusrv) core.
 
@@ -17,10 +19,10 @@ Caravan intends to be equipped with a fully fledged API for easily creating open
 
 ## Full Scope of SoC-Now Generator
 - There will be parameters to select the extensions, which will be included in core.
-    - Integer (I) extension will be the base extension
-    - Multiplication (M) extension will be optional
-    - Floating-Point (F) extension will be optional
-    - Compressed (C) extenison will be optional
+    - (I) Integer extension will be the base extension
+    - (M) Multiplication extension will be optional
+    - (F) Floating-Point extension will be optional
+    - (C) Compressed extenison will be optional
 - There will be parameters to select device(s) as well, to include in the SoC (any one or all can be selected). The list of devices are as follows.
     - GPIO
     - UART
