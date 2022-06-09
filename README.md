@@ -74,9 +74,15 @@ Caravan intends to be equipped with a fully fledged API for easily creating open
     - Tilelink Cache (TL-C)
 
 ## Contributors
-Main contributors are:
+#### Main contributors are:
 1. Usman Zain (RTL Design based on CHISEL)
 2. Talha Ahmed (RTL Design based on CHISEL)
 3. Muhammad Shahzaib (RTL Design based on CHISEL)
 4. Shahzaib Kashif (RTL Design based on CHISEL)
 5. Nimra Khan (APR flow with Cadence and OpenLane RTL-GDSII)
+
+#### Other Contributors
+1. Sajjad Ahmed
+2. Rameen Anwer
+3. Hadir Khan
+4. Waleed Waseem
