@@ -22,6 +22,25 @@ verilog/
 │   ├──uart_rx_prog.v
 
 ```
+The synthesized netlist is present here:
+```
+verilog/
+├── gl
+│   └── soc_now_caravel_top.v
+```
+The hardened macros are placed here:
+```
+def/
+└── soc_now_caravel_top.def
+```
+```
+lef/
+└── soc_now_caravel_top.lef
+```
+```
+gds/
+└── soc_now_caravel_top.gds
+```
 
 
 SoC-Now is a CHISEL based SoC Generator with a Web-Application for generating SoC with your required configurations.
