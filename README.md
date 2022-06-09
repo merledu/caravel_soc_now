@@ -6,6 +6,14 @@
 ### SoC-Now is a CHISEL based SoC. It has RV32I ISA support, 32 GPIO pins and UART to program the SoC. 
 ![image](https://user-images.githubusercontent.com/52505840/172834779-152d220e-06a2-4419-8650-636f324d3d3a.png)
 
+## Design Hierarchy
+chisel/
+├── Buraq-Mini (core source)
+│   │–– RV32i
+│       └── src
+│–– TileLink  (bus source)
+│   └── src
+└── src (SoC source)
 
 SoC-Now is a CHISEL based SoC Generator with a Web-Application for generating SoC with your required configurations.
 
@@ -35,3 +43,10 @@ Caravan intends to be equipped with a fully fledged API for easily creating open
     - Wishbone
     - Tilelink Cache (TL-C)
 
+## Contributors
+Main contributors are:
+1. Usman Zain (RTL Design based on CHISEL)
+2. Talha Ahmed (RTL Design based on CHISEL)
+3. Muhammad Shahzaib (RTL Design based on CHISEL)
+4. Shahzaib Kashif (RTL Design based on CHISEL)
+5. Nimra Khan (APR flow with Cadence and OpenLane RTL-GDSII)
