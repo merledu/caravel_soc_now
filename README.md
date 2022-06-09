@@ -1,4 +1,6 @@
-# Soc Now 
+![image](https://user-images.githubusercontent.com/52505840/172842944-f172ca37-bd83-4e31-9caf-135a4d89b37c.png#gh-dark-mode-only)
+![image](https://user-images.githubusercontent.com/52505840/172843841-d781dc5a-76e0-41a6-96e9-357081b17fa2.png#gh-light-mode-only)
+
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
 
