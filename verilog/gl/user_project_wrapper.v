@@ -5,8 +5,8 @@ module user_project_wrapper (user_clock2,
     wbs_cyc_i,
     wbs_stb_i,
     wbs_we_i,
-    VGND,
-    VPWR,
+    vccd1,
+    vssd1,
     analog_io,
     io_in,
     io_oeb,
@@ -26,8 +26,8 @@ module user_project_wrapper (user_clock2,
  input wbs_cyc_i;
  input wbs_stb_i;
  input wbs_we_i;
- input VGND;
- input VPWR;
+ input vccd1;
+ input vssd1;
  inout [28:0] analog_io;
  input [37:0] io_in;
  output [37:0] io_oeb;
