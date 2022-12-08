@@ -6,6 +6,4 @@
 -v $(USER_PROJECT_VERILOG)/rtl/prog_uart_top.v
 -v $(USER_PROJECT_VERILOG)/rtl/programmer.v
 -v $(USER_PROJECT_VERILOG)/rtl/iccm_controller.v
--v $(USER_PROJECT_VERILOG)/rtl/sky130_sram_1kbyte_1rw1r_32x256_8.v
-
- 
+-v $(USER_PROJECT_VERILOG)/rtl/sky130_sram_1kbyte_1rw1r_32x256_8.v 
