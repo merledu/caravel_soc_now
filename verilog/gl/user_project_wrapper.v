@@ -6,7 +6,7 @@ module user_project_wrapper (user_clock2,
     wbs_stb_i,
     wbs_we_i,
     vccd1,
-    vssd1
+    vssd1,
     vccd2,
     vssd2,
     vdda1,
